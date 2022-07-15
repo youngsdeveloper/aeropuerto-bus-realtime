@@ -3,7 +3,7 @@
       <div>
           <section class="section">
             <header>
-               <img class="header-img" src="/images/header.png" alt="">
+               <img class="header-img" src="images/header.png" alt="">
             </header>
             
             <div class="columns is-vcentered">
