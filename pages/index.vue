@@ -14,12 +14,17 @@
 
                 <center>
 
-                <a href="https://cutt.ly/TLPwj8h" target="_blank">
-                <b-button type="is-danger" size="is-large"
-                    icon-left="bus-multiple">
-                    Compra los billetes en la web oficial.
-                </b-button>
-                </a>
+                <div>
+                  <a href="https://cutt.ly/TLPwj8h" target="_blank">
+                    <b-button type="is-danger" size="is-large"
+                        icon-left="bus-multiple">
+                        Comprar billetes
+                    </b-button>
+                  </a>
+                </div>
+
+                
+                <span class="has-text-white help">Se te redirigirá a la web oficial de Interbus (operadora)</span>
 
                 </center>
 
@@ -138,6 +143,12 @@ export default {
   .subtitle{
     color: white;
     text-decoration: underline;
+  }
+
+
+  .help{
+    margin-top: 10px;
+    font-size: 0.9em;
   }
 
 
