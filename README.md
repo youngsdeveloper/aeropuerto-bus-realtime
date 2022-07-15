@@ -11,12 +11,16 @@ En la misma web de Interbus se podía consultar la posición en tiempo real, aun
 
 De ahi mi motivación de crear mi propia versión con algunas mejoras.
 
-## Funcionamiento
 La pagina web se refresca cada 5 segundos con la ubicación del autobus, además si lo desea se puede mostrar la estela del recorrido que va haciendo el autobus.
 
 ![Funcionamiento](./docs/images/estela.gif)
 
+
 Puedes probarlo ahora mismo [aquí](https://youngsdeveloper.github.io/aeropuerto-bus-realtime/)
+
+## Capturas de pantalla
+![Screenshot](./docs/images/screenshot.png)
+
 
 ## ¿Cómo lo he hecho?
 Se trata de una webapp desarrollada en Nuxt.js y Vue, utilizando OpenStreetMap (Leaflet) para los mapas.
