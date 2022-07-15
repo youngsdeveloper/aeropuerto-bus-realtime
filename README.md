@@ -18,12 +18,30 @@ La pagina web se refresca cada 5 segundos con la ubicación del autobus, además
 
 Puedes probarlo ahora mismo [aquí](https://youngsdeveloper.github.io/aeropuerto-bus-realtime/)
 
-## ¿Como lo he hecho?
+## ¿Cómo lo he hecho?
 Se trata de una webapp desarrollada en Nuxt.js y Vue, utilizando OpenStreetMap (Leaflet) para los mapas.
 
 La app consulta frecuentemente a una API donde se puede consumir las coordenadas del bus en tiempo real. Esta API pertenece a la empresa Interbus.
 
-## Creditos
+## Desarrollo
+
+```bash
+# clone project
+$ git clone
+# install dependencies
+$ npm install
+# serve with hot reload at localhost:3000
+$ npm run dev
+# build for production and launch server
+$ npm run build
+$ npm run start
+# generate static project
+$ npm run generate
+# deploy in github pages
+$ npm run deploy
+```
+
+## Créditos
 - [Web oficial de las lineas del Aeropuerto (Interbus)](https://www.interbusmurcia.es/servicio-aeropuerto/)
 
 ## License
