@@ -79,4 +79,11 @@ export default {
     text-align: center;
     padding: 20px 80px;
 }
+
+@media only screen and (max-width: 600px) {
+  
+    .timetable{
+        padding: 20px 20px;
+    }
+}
 </style>

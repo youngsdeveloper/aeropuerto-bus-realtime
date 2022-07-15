@@ -66,11 +66,8 @@ export default {
   }
   header img{
     display: inline-block;
-  }
-
-  .header-img{
     margin-bottom: 8vh;
-
+    width: 33%;
   }
 
   .title{
@@ -81,5 +78,12 @@ export default {
     color: white;
     text-decoration: underline;
   }
+
+
+@media (max-width: 600px) {
+  header img{
+    width: 500px;
+  }
+}
   
 </style>
