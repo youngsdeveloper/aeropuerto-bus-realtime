@@ -1,5 +1,5 @@
 <template>
-    <div v-if="loading==false">
+    <div v-if="loading==false && emptyLocation==false">
         <div id="map-wrap" >
             <client-only>
             <l-map style="height: 600px" :zoom="zoom" :center="center">
@@ -13,6 +13,9 @@
     </div>
     <div v-else-if="loading">
         <Loading />
+    </div>
+    <div v-else-if="emptyLocation">
+      No hay información de la ubicación en tiempo real. Vuelva a intentarlo más tarde.
     </div>
 </template>
 
@@ -50,6 +53,7 @@ export default {
         iconSize: [50, 50],
 
       }),
+      emptyLocation: true
 
     };
   },
@@ -62,8 +66,15 @@ export default {
       if(this.firstTime || this.centerAlways){
         this.center = location; 
       }
-      this.markerLatLng = location;
-      this.trail.push(location);
+
+
+      if(location[0] != 0 && location[1] != 0){
+        // Hay ubicacion
+        this.markerLatLng = location;
+        this.trail.push(location);
+        this.emptyLocation = false;
+      }
+      
 
       this.loading=false;
       this.firstTime=false;
