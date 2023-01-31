@@ -5,6 +5,15 @@
             <header>
                <img class="header-img" src="images/header.png" alt="imagen corporativa linea bus aeropuerto murcia">
             </header>
+
+
+            <div class="notification is-danger" v-if="show_alert_servicio" >
+              <button class="delete" v-on:click="show_alert_servicio=false"></button>
+              Actualmente el servicio de autobus al Aeropuerto de Murcia no está funcionando.
+              <br/>
+              No obstante, sigue funcionando el sistema de geolocalización del bus en tiempo real, que
+              actualmente es utilizado en otras lineas
+            </div>
             
             <div class="columns is-vcentered">
               <div class="column ">
@@ -27,6 +36,8 @@
                 <span class="has-text-white help">Se te redirigirá a la web oficial de Interbus (operadora)</span>
 
                 </center>
+
+                
 
 
               </div>
@@ -74,6 +85,7 @@
 export default {
   data(){
     return {
+      show_alert_servicio: true,
       centerAlways: false,
       showTrail: true,
 

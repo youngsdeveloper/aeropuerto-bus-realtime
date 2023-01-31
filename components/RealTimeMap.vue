@@ -61,8 +61,8 @@ export default {
   methods: {
     async fetchLocation(){
 
-      const data = await this.$axios.$get('https://cors-anywhere-youngdeveloper.herokuapp.com/https://www.interbusmurcia.es/ext.aeropuerto.php')
-      const location = data.split(",");
+      const data = await this.$axios.$get('https://api.allorigins.win/get?url=https://www.interbusmurcia.es/ext.aeropuerto.php')
+      const location = data.contents.split(",");
       if(this.firstTime || this.centerAlways){
         this.center = location; 
       }
