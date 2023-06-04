@@ -85,7 +85,7 @@
 export default {
   data(){
     return {
-      show_alert_servicio: true,
+      show_alert_servicio: false,
       centerAlways: false,
       showTrail: true,
 
