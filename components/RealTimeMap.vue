@@ -61,7 +61,7 @@ export default {
   methods: {
     async fetchLocation(){
 
-      const data = await this.$axios.$get('https://api.allorigins.win/get?url=https://www.interbusmurcia.es/ext.aeropuerto.php')
+      const data = await this.$axios.$get(`https://api.allorigins.win/get?url=https://www.interbusmurcia.es/ext.aeropuerto.php&timestamp=${new Date().getTime()}`)
       const location = data.contents.split(",");
       if(this.firstTime || this.centerAlways){
         this.center = location; 
